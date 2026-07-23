@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Style Guide — NOVO University</title>
+<meta name="description" content="The NOVO University brand system: logo, color, typography, voice, and usage.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/modern.css">
+<style>
+.sg-hero{background:var(--royal-ink);color:var(--ivory);padding:9rem 0 4rem;text-align:center}
+.sg-hero .wordmark{font-size:4rem;color:var(--ivory);margin-bottom:.6rem}
+.sg-hero .wordmark small{color:var(--gold-lt);letter-spacing:.5em}
+.sg-hero p{color:var(--silver);max-width:520px;margin:1rem auto 0;font-size:var(--text-lg)}
+.sg-sec{padding:var(--sp-8) 0;border-bottom:1px solid #e6e0d6}
+.sg-sec h2{font-size:var(--text-3xl);color:var(--deep-royal);margin-bottom:.4rem}
+.sg-sec .sub{color:var(--muted);margin-bottom:var(--sp-4);max-width:640px}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem}
+.sw{border-radius:12px;overflow:hidden;border:1px solid #e6e0d6}
+.sw .chip{height:96px}
+.sw .meta{padding:.7rem .8rem;background:#fff}
+.sw .meta b{display:block;font-size:.9rem;color:var(--ink-text)}
+.sw .meta span{font-size:.78rem;color:var(--muted);font-family:var(--sans);text-transform:uppercase;letter-spacing:.08em}
+.type-row{padding:1.2rem 0;border-bottom:1px dashed #e6e0d6}
+.type-row:last-child{border:none}
+.type-row .lab{font-family:var(--sans);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.4rem}
+.logo-box{background:var(--ivory-2);border:1px solid #e6e0d6;border-radius:14px;padding:3rem;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.logo-box.dark{background:var(--royal-ink)}
+.logo-box .wordmark{font-size:3rem}
+.logo-box.dark .wordmark{color:var(--ivory)}
+.logo-box.dark .wordmark small{color:var(--gold-lt)}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.4rem}
+.do,.dont{border-radius:12px;padding:1.4rem 1.6rem}
+.do{background:rgba(15,107,69,.08);border:1px solid rgba(15,107,69,.25)}
+.dont{background:rgba(150,40,40,.06);border:1px solid rgba(150,40,40,.2)}
+.do h4,.dont h4{font-family:var(--sans);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.7rem}
+.do h4{color:var(--forest)}.dont h4{color:#a33}
+.do ul,.dont ul{list-style:none;font-size:.94rem;color:var(--muted)}
+.do li,.dont li{padding:.3rem 0 .3rem 1.3rem;position:relative}
+.do li::before{content:"✓";position:absolute;left:0;color:var(--forest);font-weight:700}
+.dont li::before{content:"✕";position:absolute;left:0;color:#a33;font-weight:700}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.voice-card{background:#fff;border:1px solid #e9e4dd;border-radius:12px;padding:1.6rem}
+.voice-card h4{color:var(--deep-royal);font-size:var(--text-xl);margin-bottom:.4rem}
+.voice-card p{color:var(--muted);font-size:.94rem}
+@media(max-width:800px){.dos,.voice-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav solid">
+  <div class="container">
+    <a href="index.html" class="wordmark">NOVO<small>UNIVERSITY</small></a>
+    <button class="menu-btn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <div class="nav-links">
+      <a href="model.html">The Model</a><a href="journey.html">The Journey</a><a href="programs.html">Programs</a><a href="ai.html">AI at NOVO</a><a href="convenings.html">Convenings</a><a href="projects.html">Projects</a>
+      <a href="apply.html" class="btn btn-gold" style="padding:.6em 1.3em">Begin Now</a>
+    </div>
+  </div>
+</nav>
+
+<header class="sg-hero">
+  <div class="container">
+    <span class="eyebrow on-dark">Brand System</span>
+    <div class="wordmark" style="margin-top:1rem">NOVO<small>UNIVERSITY</small></div>
+    <p>The identity of a university built for the next evolution of thinking — where learning evolves with AI and real good work builds the awareness that helps whole systems thrive.</p>
+  </div>
+</header>
+
+<!-- LOGO -->
+<section class="sg-sec"><div class="container">
+  <h2>The Wordmark</h2>
+  <p class="sub">NOVO is a pure wordmark — set in EB Garamond, all caps, with generous letter-spacing. There is no symbol or icon. The word itself is the mark. "UNIVERSITY" sits beneath in spaced General Sans. Never add a graphic, flame, or ornament.</p>
+  <div class="logo-box"><div class="wordmark">NOVO<small>UNIVERSITY</small></div></div>
+  <div class="logo-box dark"><div class="wordmark">NOVO<small>UNIVERSITY</small></div></div>
+  <div class="dos">
+    <div class="do"><h4>Do</h4><ul><li>Keep the Garamond letterforms and wide tracking</li><li>Use on royal ink, deep royal, or ivory backgrounds</li><li>Give it clear space — never crowd it</li><li>Scale proportionally</li></ul></div>
+    <div class="dont"><h4>Don't</h4><ul><li>Add a symbol, flame, or icon</li><li>Recolor the wordmark outside the palette</li><li>Condense, stretch, or re-letter it</li><li>Set it in a different typeface</li></ul></div>
+  </div>
+</div></section>
+
+<!-- COLOR -->
+<section class="sg-sec"><div class="container">
+  <h2>Color</h2>
+  <p class="sub">Deep Royal is the primary — regal, serious, timeless. Forest green is the complement across the color wheel — living, growing, renewing. Gold is the accent of achievement and light. Ivory and silver carry the neutrals.</p>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#1c1233"></div><div class="meta"><b>Royal Ink</b><span>#1C1233</span></div></div>
+    <div class="sw"><div class="chip" style="background:#2e1b52"></div><div class="meta"><b>Deep Royal ★</b><span>#2E1B52</span></div></div>
+    <div class="sw"><div class="chip" style="background:#4b2e83"></div><div class="meta"><b>Royal</b><span>#4B2E83</span></div></div>
+    <div class="sw"><div class="chip" style="background:#6b4bb0"></div><div class="meta"><b>Royal Light</b><span>#6B4BB0</span></div></div>
+    <div class="sw"><div class="chip" style="background:#0f6b45"></div><div class="meta"><b>Forest ★</b><span>#0F6B45</span></div></div>
+    <div class="sw"><div class="chip" style="background:#3fae77"></div><div class="meta"><b>Forest Light</b><span>#3FAE77</span></div></div>
+    <div class="sw"><div class="chip" style="background:#c9a227"></div><div class="meta"><b>Gold</b><span>#C9A227</span></div></div>
+    <div class="sw"><div class="chip" style="background:#e6c65a"></div><div class="meta"><b>Gold Light</b><span>#E6C65A</span></div></div>
+    <div class="sw"><div class="chip" style="background:#b9bcc6"></div><div class="meta"><b>Silver</b><span>#B9BCC6</span></div></div>
+    <div class="sw"><div class="chip" style="background:#f4f1ea;border-bottom:1px solid #e6e0d6"></div><div class="meta"><b>Ivory</b><span>#F4F1EA</span></div></div>
+  </div>
+  <p class="sub" style="margin-top:1.4rem"><b style="color:var(--ink-text)">★ Primary &amp; Secondary.</b> Deep Royal leads; Forest supports. Gold is reserved for accents, CTAs, and emphasis — never large fields.</p>
+</div></section>
+
+<!-- TYPE -->
+<section class="sg-sec"><div class="container">
+  <h2>Typography</h2>
+  <p class="sub">Two typefaces. EB Garamond (serif) carries the voice — headlines, the wordmark, editorial moments, and italic emphasis. General Sans (Fontshare) carries the function — body copy, labels, navigation, and buttons.</p>
+  <div data-reveal class="type-row"><div class="lab">EB Garamond · Display</div><div style="font-family:var(--serif);font-size:3.2rem;line-height:1.05;color:var(--deep-royal)">The next evolution of thinking.</div></div>
+  <div data-reveal class="type-row"><div class="lab">EB Garamond · Italic Emphasis</div><div style="font-family:var(--serif);font-style:italic;font-size:2rem;color:var(--gold)">your Opus, a body of Living Works</div></div>
+  <div data-reveal class="type-row"><div class="lab">General Sans · Body</div><div style="font-family:var(--sans);font-size:1.0625rem;max-width:640px;color:var(--ink-text)">NOVO is a university for the next phase of humanity — where you learn by contributing meaningful good to the world, and graduate having built your Opus.</div></div>
+  <div data-reveal class="type-row"><div class="lab">General Sans · Eyebrow / Label</div><div class="eyebrow">A New Renaissance of Thinking</div></div>
+</div></section>
+
+<!-- VOICE -->
+<section class="sg-sec"><div class="container">
+  <h2>Voice</h2>
+  <p class="sub">Alchemy — a renaissance with an AI kick. We speak with the gravity of a great institution and the warmth of a human invitation. Elevated but never cold; hopeful but never naive.</p>
+  <div class="voice-grid">
+    <div data-reveal class="voice-card"><h4>Elevated</h4><p>Classical, literary cadence. We borrow the dignity of the Renaissance and the university's oldest purpose.</p></div>
+    <div data-reveal class="voice-card"><h4>Human</h4><p>Warm, direct, second-person. We invite ("Begin your Opus"), we don't sell. Kindness and compassion are the point.</p></div>
+    <div data-reveal class="voice-card"><h4>Purposeful</h4><p>Every line points to real good in the world. We speak of impact, contribution, and stewardship — not credentials.</p></div>
+    <div data-reveal class="voice-card"><h4>Forward</h4><p>We stand at the threshold of what's next — technology in concert with the human difference, for good.</p></div>
+  </div>
+  <div class="dos" style="margin-top:1.8rem">
+    <div class="do"><h4>Say</h4><ul><li>The next evolution of thinking</li><li>Pay with Time, Talent, or Tithes</li><li>Your Opus · Living Works</li><li>Contribute meaningful good</li><li>Be part of the change for good</li></ul></div>
+    <div class="dont"><h4>Avoid</h4><ul><li>"Free" / "tuition-free"</li><li>Corporate or salesy language</li><li>Credits, seat time, transcripts as the goal</li><li>Hype without substance</li></ul></div>
+  </div>
+</div></section>
+
+<!-- SIGNATURE VOCAB -->
+<section class="sg-sec"><div class="container">
+  <h2>Signature Vocabulary</h2>
+  <p class="sub">The proprietary language of the NOVO model. Use these terms consistently and capitalized.</p>
+  <div class="grid-3">
+    <div data-reveal class="card"><h3>Opus</h3><p>A learner's cumulative Great Work — the true substance of their degree.</p></div>
+    <div data-reveal class="card"><h3>Living Works</h3><p>The individual real-world projects that make up an Opus.</p></div>
+    <div data-reveal class="card"><h3>Time · Talent · Tithes</h3><p>The three ways a learner contributes in exchange for their education.</p></div>
+    <div data-reveal class="card"><h3>The Four Voices</h3><p>Faculty, peers, community, and impact — who assess every Living Work.</p></div>
+    <div data-reveal class="card"><h3>The Six Movements</h3><p>Encounter · Foundation · Apprenticeship · Intervention · Evidence · Stewardship.</p></div>
+    <div data-reveal class="card"><h3>The Next Evolution of Thinking</h3><p>The promise and rallying cry of the university.</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div><div class="wordmark">NOVO<small>UNIVERSITY</small></div><p>A university restoring the social purpose of higher learning. A program of Free2Learn, a Washington State nonprofit.</p></div>
+      <div class="foot-col"><h5>Learn</h5><a href="model.html">The Model</a><a href="journey.html">The Journey</a><a href="programs.html">Programs</a><a href="ai.html">AI at NOVO</a><a href="convenings.html">Convenings</a><a href="projects.html">Projects</a></div>
+      <div class="foot-col"><h5>Contribute</h5><a href="model.html">Give Time</a><a href="model.html">Give Talent</a><a href="model.html">Give Tithes</a><a href="apply.html">Partner With Us</a></div>
+      <div class="foot-col"><h5>Begin</h5><a href="apply.html">Apply Now</a><a href="apply.html">Visit</a><a href="apply.html">Contact</a></div>
+    </div>
+    <div class="foot-legal"><span>© 2026 NOVO University · A Free2Learn Initiative</span><span>Learning in service of the common good.</span></div>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* ============ NOVO — MODERN / FUTURISTIC LAYER ============ */
+/* Upgrades execution while preserving the locked brand palette
+   (Deep Royal, Forest, Gold, Ivory). Loaded AFTER base.css + site.css. */
+
+:root{
+  --glass:rgba(255,255,255,.06);
+  --glass-brd:rgba(255,255,255,.12);
+  --glow-gold:rgba(201,162,39,.32);
+  --glow-royal:rgba(107,75,176,.4);
+  --grid-line:rgba(255,255,255,.03);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+/* ---- ambient dark texture: faint grid + glow on dark sections ---- */
+.hero::before,
+.page-hero::before,
+.bg-ink::before,
+.bg-royal::before,
+.cta::before{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background-image:
+    linear-gradient(var(--grid-line) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(circle at 70% 30%,#000 0%,transparent 72%);
+  -webkit-mask-image:radial-gradient(circle at 70% 30%,#000 0%,transparent 72%);
+}
+.cta,.bg-ink,.bg-royal{position:relative;overflow:hidden}
+.cta>*,.bg-ink>*,.bg-royal>*{position:relative;z-index:2}
+
+/* soft gold aurora glow behind dark heroes */
+.hero::after,
+.page-hero::after{
+  content:"";position:absolute;z-index:1;pointer-events:none;
+  width:52vw;height:52vw;right:-14vw;top:-20vw;border-radius:50%;
+  background:radial-gradient(circle,var(--glow-gold) 0%,transparent 62%);
+  opacity:.28;filter:blur(38px);
+}
+.page-hero::after{width:36vw;height:36vw;opacity:.18}
+
+/* ---- eyebrow → futuristic mono/tech label with leading tick ---- */
+.eyebrow{display:inline-flex;align-items:center;gap:.6em}
+.eyebrow::before{
+  content:"";width:22px;height:1.5px;background:currentColor;
+  display:inline-block;opacity:.75;
+}
+
+/* ---- hero refinements ---- */
+.hero h1{letter-spacing:-.015em}
+.hero p{color:rgba(244,241,234,.82)}
+/* subtle shimmer on the italic gold emphasis */
+.hero h1 em,.page-hero h1 em,.cta h2 em{
+  background:linear-gradient(100deg,var(--gold-lt),#f6e6ad 48%,var(--gold) 66%,var(--gold-lt));
+  background-size:220% auto;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:novoShimmer 11s linear infinite;
+}
+@keyframes novoShimmer{to{background-position:220% center}}
+
+/* ---- glass cards: frosted, luminous edge, lift + glow on hover ---- */
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(251,250,246,.72));
+  border:1px solid rgba(46,27,82,.1);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border-radius:18px;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);
+}
+/* thin luminous top edge */
+.card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0;transition:opacity .35s var(--ease);
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(201,162,39,.4);
+  box-shadow:0 18px 42px rgba(46,27,82,.12),0 0 0 1px rgba(201,162,39,.09);}
+.card:hover::before{opacity:.7}
+
+/* dark-section cards become true glass */
+.bg-ink .card,.bg-royal .card{
+  background:var(--glass);border-color:var(--glass-brd);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+}
+.bg-ink .card h3,.bg-royal .card h3{color:var(--ivory)}
+.bg-ink .card p,.bg-royal .card p{color:var(--silver)}
+.bg-ink .card:hover,.bg-royal .card:hover{
+  border-color:rgba(230,198,90,.35);
+  box-shadow:0 20px 48px rgba(0,0,0,.32),0 0 18px rgba(201,162,39,.07);
+}
+
+/* ---- buttons: futuristic sheen + glow ---- */
+.btn{position:relative;overflow:hidden;isolation:isolate}
+.btn-gold{box-shadow:0 4px 16px rgba(201,162,39,.18)}
+.btn-gold:hover{box-shadow:0 7px 22px rgba(201,162,39,.28);transform:translateY(-2px)}
+.btn::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.22) 50%,transparent 65%);
+  transform:translateX(-120%);transition:transform .7s var(--ease);
+}
+.btn:hover::after{transform:translateX(120%)}
+
+/* ---- image treatments: rounded, subtle ring + glow ---- */
+.split-img{border-radius:20px;position:relative}
+.split-img::after{
+  content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(201,162,39,.18);
+}
+
+/* ---- section rhythm: hairline dividers between light sections ---- */
+.sec-head h2{letter-spacing:-.01em}
+
+/* ---- scroll reveal ---- */
+[data-reveal]{opacity:0;transform:translateY(16px);
+  transition:opacity .55s var(--ease),transform .55s var(--ease);}
+[data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  [data-reveal]{opacity:1;transform:none;transition:none}
+  .hero h1 em,.page-hero h1 em,.cta h2 em{animation:none}
+}
+
+/* ---- nav polish: frosted when solid/scrolled ---- */
+.nav.solid{background:rgba(28,18,51,.72);backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:none}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;
+  background:var(--gold-lt);transform:scaleX(0);transform-origin:left;transition:transform .28s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1)}
+
+/* ---- footer: faint top glow line ---- */
+footer{position:relative}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,162,39,.32),transparent)}

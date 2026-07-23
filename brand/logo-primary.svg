@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" width="420" height="160" role="img" aria-label="NOVO University">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&amp;display=swap');
+    .wm{font-family:'EB Garamond',Georgia,serif;font-weight:600;letter-spacing:14px;}
+    .sub{font-family:'General Sans','Helvetica Neue',Arial,sans-serif;font-weight:500;letter-spacing:11px;}
+  </style>
+  <text x="210" y="86" text-anchor="middle" class="wm" font-size="88" fill="#4B2E83">NOVO</text>
+  <text x="213" y="120" text-anchor="middle" class="sub" font-size="18" fill="#0F6B45">UNIVERSITY</text>
+</svg>

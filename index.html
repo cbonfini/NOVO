@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVO University — Learning That Does Measurable Good</title>
+<meta name="description" content="A university where you don't just earn a degree — you build your Opus, a body of Living Works reviewed by many voices and measured by real-world impact. You contribute Time, Talent, or Tithes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/modern.css">
+<style>
+/* HOMEPAGE-specific */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:var(--ivory);overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg, rgba(28,18,51,.95) 0%, rgba(46,27,82,.8) 42%, rgba(46,27,82,.32) 74%, rgba(28,18,51,.12) 100%);}
+.hero-inner{position:relative;z-index:2;max-width:690px;padding-top:4rem}
+.hero h1{font-size:var(--text-hero);line-height:1.04;margin:1.2rem 0 1.4rem}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.hero p{font-size:var(--text-lg);opacity:.93;max-width:570px;margin-bottom:2.2rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-note{margin-top:2.4rem;font-size:.9rem;opacity:.75;display:flex;gap:1.4rem;flex-wrap:wrap}
+.hero-note span{display:flex;align-items:center;gap:.5rem}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold-lt);flex-shrink:0}
+
+.promise{background:var(--deep-royal);color:var(--ivory);text-align:center;padding:var(--sp-8) 0}
+.promise h2{font-size:var(--text-2xl);font-style:italic;font-weight:500;max-width:900px;margin:0 auto;line-height:1.42}
+.promise h2 b{font-style:normal;font-weight:600;color:var(--gold-lt)}
+
+.ttt-icon{width:50px;height:50px;margin-bottom:1.1rem}
+
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:var(--sp-4);border-top:1px solid rgba(185,188,198,.22)}
+.step{padding:1.8rem 1.1rem 0;border-right:1px solid rgba(185,188,198,.14)}
+.step:last-child{border-right:none}
+.step .num{font-family:var(--serif);font-size:1.1rem;color:var(--gold-lt);margin-bottom:.6rem}
+.step h4{font-size:1.1rem;margin-bottom:.5rem}
+.step p{font-size:.85rem;color:var(--silver);line-height:1.5}
+
+.opus-band{background:linear-gradient(135deg,var(--deep-royal),var(--royal));border-radius:24px;padding:var(--sp-8) var(--sp-6);color:var(--ivory);position:relative;overflow:hidden}
+.opus-band::before{content:"";position:absolute;top:-40%;right:-8%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.3),transparent 65%)}
+.opus-band .inner{position:relative;z-index:2;max-width:760px}
+.opus-band .eyebrow{color:var(--gold-lt)}
+.opus-band h2{font-size:var(--text-3xl);margin:.8rem 0 1.2rem;color:var(--ivory)}
+.opus-band h2 em{font-style:italic;color:var(--gold-lt)}
+.opus-band p{opacity:.92;font-size:var(--text-lg);margin-bottom:1.8rem}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.step{border-right:none;border-bottom:1px solid rgba(185,188,198,.14);padding-bottom:1.3rem}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="wordmark">NOVO<small>UNIVERSITY</small></a>
+    <button class="menu-btn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <div class="nav-links">
+      <a href="model.html">The Model</a>
+      <a href="journey.html">The Journey</a>
+      <a href="programs.html">Programs</a>
+      <a href="ai.html">AI at NOVO</a>
+      <a href="convenings.html">Convenings</a>
+      <a href="projects.html">Projects</a>
+      <a href="apply.html" class="btn btn-gold" style="padding:.6em 1.3em">Begin Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"><img src="img/abstract-journey.svg" alt="Abstract arc of six connected waypoints rising toward a gold ring, in NOVO's royal and gold palette"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow" style="color:var(--gold-lt)">A University With a Social Purpose</span>
+      <h1>Don't just earn a degree.<br>Graduate with <em>work that did real good.</em></h1>
+      <p>At NOVO, you learn by doing real good in the world. Instruction is built on open, world-class resources; assessment is grounded in evidence of impact. You graduate having built your <em>Opus</em>: a body of Living Works that leaves you, and the world, measurably better.</p>
+      <div class="hero-cta">
+        <a href="model.html" class="btn btn-gold">View the Model →</a>
+        <a href="apply.html" class="btn btn-outline">Begin Your Opus</a>
+      </div>
+      <div class="hero-note">
+        <span><span class="dot"></span> Pay with Time, Talent, or Tithes</span>
+        <span><span class="dot"></span> Learn on open, world-class resources</span>
+        <span><span class="dot"></span> A degree of real-world impact</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PROMISE -->
+<section class="promise">
+  <div class="container">
+    <h2>The university has always had a social purpose. We are restoring it — a place where learners <b>contribute meaningful good to the world while they learn</b>, evolve with the technologies reshaping our age, and discover their purpose.</h2>
+  </div>
+</section>
+
+<!-- MODEL / TIME TALENT TITHES -->
+<section class="bg-alt" id="model">
+  <div class="container">
+    <div data-reveal class="sec-head">
+      <span class="eyebrow">The Model</span>
+      <h2>Learning that makes real positive impact you can show.</h2>
+      <p>Instruction is built on open, world-class resources, so cost is never the barrier. But a NOVO education is never simply given. Every learner contributes in one of three ways — so the university sustains itself and the world is left better for it.</p>
+    </div>
+    <div class="grid-3">
+      <div data-reveal class="card">
+        <svg class="ttt-icon" viewBox="0 0 48 48" fill="none" stroke="#2e1b52" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 6h20M14 42h20M16 6c0 10 16 12 16 18s-16 8-16 18M32 6c0 10-16 12-16 18"/>
+        </svg>
+        <span class="kicker">Contribution I</span>
+        <h3>Time</h3>
+        <p>Give back to your community through a project you develop across your degree — real good, delivered where you live.</p>
+      </div>
+      <div data-reveal class="card">
+        <svg class="ttt-icon" viewBox="0 0 48 48" fill="none" stroke="#0f6b45" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M30 8l10 10M34 6l8 8-22 22-10 2 2-10z"/>
+        </svg>
+        <span class="kicker" style="color:var(--gold)">Contribution II</span>
+        <h3>Talent</h3>
+        <p>Put your skills to work doing good work for the university itself — building, teaching, designing, translating, mentoring.</p>
+      </div>
+      <div data-reveal class="card">
+        <svg class="ttt-icon" viewBox="0 0 48 48" fill="none" stroke="#c9a227" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 26c0 8 7 14 16 14s16-6 16-14M24 6v14M24 20l-7-6M24 20l7-6"/>
+        </svg>
+        <span class="kicker" style="color:var(--forest)">Contribution III</span>
+        <h3>Tithes</h3>
+        <p>Pay a modest assessment — a tithe — that keeps the university strong and instruction open for the learners who follow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT: assessment -->
+<section>
+  <div class="container">
+    <div class="split">
+      <div data-reveal class="split-img"><img src="img/model-real.png" alt="A calendar and watch, creative and professional tools on a laptop, and coins with a giving pledge — representing Time, Talent, and Tithes"></div>
+      <div>
+        <span class="eyebrow">Rigor, Reimagined</span>
+        <h2>Assessed by many voices — not one grade.</h2>
+        <p>Your work is judged the way real work is judged in the world: by faculty for its rigor, by peers for its craft, by community partners for its usefulness, and by the evidence of the impact it actually makes.</p>
+        <p>No hollow credits. A NOVO degree is earned through a sequence of <em>Living Works</em> — each one real, each one reviewed, each one leaving the world measurably better.</p>
+        <a href="model.html" class="btn btn-royal" style="margin-top:.6rem">How the Model Works →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="bg-ink" id="journey">
+  <div class="container">
+    <div data-reveal class="sec-head">
+      <span class="eyebrow on-dark">The Journey</span>
+      <h2>Six movements, one transformation.</h2>
+      <p>Every learner moves through the same arc — from first encounter to lasting stewardship.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h4>Encounter</h4><p>Meet the great questions and the community you'll build with.</p></div>
+      <div class="step"><div class="num">02</div><h4>Foundation</h4><p>Build core knowledge on open, world-class resources.</p></div>
+      <div class="step"><div class="num">03</div><h4>Apprenticeship</h4><p>Learn the craft by working alongside mentors and peers.</p></div>
+      <div class="step"><div class="num">04</div><h4>Intervention</h4><p>Design and deliver a real project that does measurable good.</p></div>
+      <div class="step"><div class="num">05</div><h4>Evidence</h4><p>Gather proof of impact; be assessed by many voices.</p></div>
+      <div class="step"><div class="num">06</div><h4>Stewardship</h4><p>Give back — and help the next learner begin their Opus.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OPUS -->
+<section id="opus">
+  <div class="container">
+    <div class="opus-band">
+      <div class="inner">
+        <span class="eyebrow">Your Great Work</span>
+        <h2>You don't graduate with a transcript.<br>You graduate with your <em>Opus.</em></h2>
+        <p>Every Living Work you complete becomes part of a cumulative body of achievement — your Opus. It is the proof of who you've become and the good you've set into the world. It is yours to carry, and yours to keep building.</p>
+        <a href="apply.html" class="btn btn-gold">Start Your Opus →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI TEASER -->
+<section class="bg-alt" id="ai">
+  <div class="container">
+    <div class="split rev">
+      <div data-reveal class="split-img"><img src="img/ai-real.png" alt="Two university students collaborating on a laptop showing an AI assistant helping them write code"></div>
+      <div>
+        <span class="eyebrow">AI at NOVO</span>
+        <h2>Taking AI seriously — as a tool, a collaborator, and an <em>open question.</em></h2>
+        <p>Every NOVO learner works with an AI co-mentor built for their field — always paired with human faculty, and always with humans holding the judgment. We prepare people to work well with the technologies reshaping their fields, and to question them honestly.</p>
+        <p>Through our <em>Global AI/Human for Prosperity Research Hub</em>, the university studies how humans and increasingly capable AI systems can coexist well — including rigorous, open-minded research on the possible moral status and welfare of AI systems, and what would follow if they matter.</p>
+        <a href="ai.html" class="btn btn-royal" style="margin-top:.6rem">Explore AI at NOVO →</a>
+        <a href="convenings.html" class="btn btn-outline" style="margin:.6rem 0 0 .6rem;border-color:var(--deep-royal);color:var(--deep-royal)">See the Convenings →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="apply">
+  <div class="container">
+    <span class="eyebrow on-dark">The Invitation</span>
+    <h2>Be part of the change for <em>good.</em></h2>
+    <p>See how NOVO joins open learning, real-world impact, and serious research on humans and AI. Your first Living Work can begin today.</p>
+    <a href="apply.html" class="btn btn-gold">View the Model &amp; Begin →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="wordmark">NOVO<small>UNIVERSITY</small></div>
+        <p>A university restoring the social purpose of higher learning. A program of Free2Learn, a Washington State nonprofit.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Learn</h5>
+        <a href="model.html">The Model</a><a href="journey.html">The Journey</a><a href="programs.html">Programs</a><a href="ai.html">AI at NOVO</a><a href="convenings.html">Convenings</a><a href="projects.html">Projects</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contribute</h5>
+        <a href="model.html">Give Time</a><a href="model.html">Give Talent</a><a href="model.html">Give Tithes</a><a href="apply.html">Partner With Us</a>
+      </div>
+      <div class="foot-col">
+        <h5>Begin</h5>
+        <a href="apply.html">Apply Now</a><a href="apply.html">Visit</a><a href="apply.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 NOVO University · A Free2Learn Initiative</span>
+      <span>Learning in service of the common good.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

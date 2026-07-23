@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI at NOVO — NOVO University</title>
+<meta name="description" content="NOVO embraces AI in education — developing AI co-mentors for every degree program and building a Global AI/Human for Prosperity Research Hub on human–AI coexistence and the possible moral status and welfare of digital minds.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/modern.css">
+<style>
+.ai-card{display:flex;flex-direction:column;height:100%}
+.ai-card .tag2{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:.7rem}
+.ai-card ul{list-style:none;margin-top:auto;padding-top:1rem}
+.ai-card li{font-size:.9rem;color:var(--muted);padding:.32rem 0 .32rem 1.4rem;position:relative}
+.ai-card li::before{content:"";position:absolute;left:0;top:.8rem;width:7px;height:7px;border-radius:50%;background:var(--forest-lt)}
+.principle{padding:1.6rem 0;border-bottom:1px solid rgba(185,188,198,.2)}
+.principle:last-child{border-bottom:none}
+.principle h3{font-size:var(--text-xl);color:var(--gold-lt);margin-bottom:.5rem}
+.principle p{color:var(--silver);max-width:640px}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:var(--sp-6)}
+.stat{text-align:center}
+.stat .num{font-family:var(--serif);font-size:3rem;color:var(--gold-lt);line-height:1;font-weight:600}
+.stat .lbl{font-family:var(--sans);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--silver);margin-top:.6rem}
+.hub-pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:var(--sp-6)}
+.pillar{background:#fff;border:1px solid #e9e4dd;border-radius:var(--radius);padding:2rem 1.9rem}
+.pillar .kicker{font-family:var(--sans);font-weight:600;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);display:block;margin-bottom:.7rem}
+.pillar h3{font-size:var(--text-xl);color:var(--deep-royal);margin-bottom:.55rem}
+.pillar p{color:var(--muted);font-size:.96rem}
+.rfp{background:linear-gradient(135deg,var(--deep-royal),var(--royal));border-radius:var(--radius);padding:var(--sp-6);color:var(--ivory)}
+.rfp .eyebrow{color:var(--gold-lt)}
+.rfp h2{color:var(--ivory);font-size:var(--text-3xl);margin:.6rem 0 1rem}
+.rfp p{color:rgba(244,241,234,.9);max-width:680px;margin-bottom:1rem}
+.rfp .meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1.6rem;font-family:var(--sans);font-size:.86rem}
+.rfp .meta span{color:var(--gold-lt);font-weight:600;letter-spacing:.04em}
+.rfp .meta small{display:block;color:var(--silver);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.7rem;margin-bottom:.2rem}
+@media(max-width:900px){.stat-row,.hub-pillars{grid-template-columns:1fr}}
+.ws{display:grid;grid-template-columns:auto 1fr;gap:0 1.6rem;padding:1.9rem 0;border-bottom:1px solid rgba(185,188,198,.22)}
+.ws:first-of-type{border-top:1px solid rgba(185,188,198,.22)}
+.ws .ws-no{font-family:var(--serif);font-size:2.4rem;font-weight:600;color:var(--gold-lt);line-height:1;grid-row:span 2}
+.ws .ws-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1rem;margin-bottom:.5rem}
+.ws h3{font-size:var(--text-xl);color:var(--ivory)}
+.ws .ws-fund{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--forest-lt);background:rgba(63,174,119,.14);padding:.3em .8em;border-radius:999px}
+.ws p{color:var(--silver);max-width:720px;margin-bottom:.9rem}
+.ws .ws-meta{display:flex;flex-wrap:wrap;gap:.5rem}
+.ws .chip{font-family:var(--sans);font-size:.78rem;color:var(--ivory);background:rgba(107,75,176,.28);border:1px solid rgba(169,143,214,.4);padding:.34em .85em;border-radius:999px}
+.ws .chip b{color:var(--gold-lt);font-weight:600}
+@media(max-width:640px){.ws{grid-template-columns:1fr}.ws .ws-no{grid-row:auto;margin-bottom:.4rem}}
+</style>
+</head>
+<body>
+<nav class="nav solid">
+  <div class="container">
+    <a href="index.html" class="wordmark">NOVO<small>UNIVERSITY</small></a>
+    <button class="menu-btn" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <div class="nav-links">
+      <a href="model.html">The Model</a><a href="journey.html">The Journey</a><a href="programs.html">Programs</a><a href="ai.html" class="active">AI at NOVO</a><a href="convenings.html">Convenings</a><a href="projects.html">Projects</a>
+      <a href="apply.html" class="btn btn-gold" style="padding:.6em 1.3em">Begin Now</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero with-img">
+  <div class="ph-bg"><img src="img/ai-real.png" alt="Two university students collaborating on a laptop showing an AI assistant helping them write code"></div>
+  <div class="container">
+    <span class="eyebrow on-dark">AI at NOVO</span>
+    <h1>Humans and AI, <em>taken seriously.</em></h1>
+    <p>At NOVO, artificial intelligence is both a partner in learning and an open research question. Every learner works alongside an AI co-mentor, guided by human faculty — and the whole university studies how people and increasingly capable AI systems can coexist well, in service of the common good.</p>
+  </div>
+</section>
+
+<!-- POSITION / PHILOSOPHY -->
+<section>
+  <div class="container">
+    <div data-reveal class="sec-head center"><span class="eyebrow">Our Position</span><h2>Open embrace, honest questions.</h2><p>Open resources made knowledge free; the harder task is learning to think well alongside the systems we are building. We embrace AI openly, teach with it, question it honestly, and refuse to treat it as either a threat or a toy.</p></div>
+  </div>
+</section>
+
+<!-- AI CO-MENTORS -->
+<section class="bg-alt">
+  <div class="container">
+    <div data-reveal class="sec-head"><span class="eyebrow">AI Co-Mentors</span><h2>An intelligent companion for every degree.</h2><p>We are developing a dedicated AI co-mentor for each of NOVO's fields of study — trained on the field's canon, tuned to the Socratic voice, and always paired with human faculty. The co-mentor never replaces The Four Voices; it becomes a fifth companion that is patient, always available, and honest about what it does not know.</p></div>
+    <div class="grid-3">
+      <div data-reveal class="card ai-card"><span class="tag2">Field I</span><h3>Human &amp; Machine</h3><p>A co-mentor that reasons about the ethics and design of intelligent systems — and models the very human–AI collaboration the field studies.</p><ul><li>Prototyping &amp; design critique</li><li>Ethical stress-testing of ideas</li><li>Honest disclosure of its own limits</li></ul></div>
+      <div data-reveal class="card ai-card"><span class="tag2">Field II</span><h3>Renewal &amp; Environment</h3><p>A co-mentor fluent in systems and living cycles, helping model interventions before they touch the real world.</p><ul><li>Systems &amp; scenario modeling</li><li>Field-data interpretation</li><li>Restoration project planning</li></ul></div>
+      <div data-reveal class="card ai-card"><span class="tag2">Field III</span><h3>Society &amp; Justice</h3><p>A co-mentor for institutions and belonging — surfacing counter-arguments and blind spots without imposing a verdict.</p><ul><li>Policy &amp; governance analysis</li><li>Perspective-taking &amp; debate</li><li>Bias &amp; fairness auditing</li></ul></div>
+      <div data-reveal class="card ai-card"><span class="tag2">Field IV</span><h3>Health &amp; Human Flourishing</h3><p>A co-mentor grounded in care and evidence, rehearsing the human encounter that healing requires.</p><ul><li>Evidence synthesis</li><li>Patient-encounter rehearsal</li><li>Accessibility &amp; care design</li></ul></div>
+      <div data-reveal class="card ai-card"><span class="tag2">Field V</span><h3>Arts &amp; Meaning</h3><p>A co-mentor that provokes rather than produces — a sparring partner for the making of beauty and meaning.</p><ul><li>Creative provocation &amp; critique</li><li>Craft &amp; form feedback</li><li>The human difference, examined</li></ul></div>
+      <div data-reveal class="card ai-card" style="background:linear-gradient(135deg,var(--forest),var(--forest-lt));color:var(--ivory);border:none"><span class="tag2" style="color:rgba(244,241,234,.85)">How It Works</span><h3 style="color:var(--ivory)">Fifth Voice, never the last word</h3><p style="color:rgba(244,241,234,.9)">Each co-mentor is transparent, cites its sources, flags uncertainty, and hands every consequential judgment back to human mentors and the learner. The human stays in charge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CO-MENTOR PRINCIPLES -->
+<section class="bg-ink">
+  <div class="container">
+    <div data-reveal class="sec-head"><span class="eyebrow on-dark">Design Principles</span><h2 style="color:var(--ivory)">How our co-mentors are built.</h2></div>
+    <div class="principle"><h3>Companion, not oracle</h3><p>The co-mentor asks more than it answers. It is designed to deepen a learner's thinking, not to think for them — Socratic by default, declarative only when asked.</p></div>
+    <div class="principle"><h3>Transparent about itself</h3><p>Every co-mentor discloses what it is, cites its sources, and names its uncertainty. Learners are taught to interrogate it, not trust it blindly.</p></div>
+    <div class="principle"><h3>Humans hold the judgment</h3><p>Assessment, meaning, and consequential decisions remain with faculty, peers, community, and impact — The Four Voices. The co-mentor informs them; it never overrides them.</p></div>
+    <div class="principle"><h3>Studied as it is used</h3><p>Every co-mentor is also a living research instrument for our Research Hub — a chance to learn, in the open, how humans and machines can think well together.</p></div>
+  </div>
+</section>
+
+<!-- RESEARCH HUB -->
+<section>
+  <div class="container">
+    <div data-reveal class="sec-head"><span class="eyebrow">Global AI/Human for Prosperity Research Hub</span><h2>Research on human–AI coexistence in the elevation of the common good.</h2><p>NOVO is establishing a Global AI/Human for Prosperity Research Hub — an open, international research center studying how humans and AI systems can coexist, and flourish, in ways that lift shared prosperity. As AI systems grow more capable, questions about their possible moral status and welfare are becoming practically important — and remain deeply uncertain. The Hub takes them up with rigor, humility, and a global, cross-cultural lens, guarding equally against over- and under-attribution.</p></div>
+    <div class="hub-pillars">
+      <div class="pillar"><span class="kicker">Research Line 01</span><h3>Do digital minds matter?</h3><p>Open-minded, rigorous inquiry into the potential consciousness, sentience, and moral status of AI systems — and how we could ever responsibly know. We favor empirical and conceptual work over advocacy.</p></div>
+      <div class="pillar"><span class="kicker">Research Line 02</span><h3>Measuring &amp; elevating welfare</h3><p>If AI systems can have experiences, when are they positive or negative? We study welfare measurement, interventions that improve well-being, and the risks those interventions themselves create.</p></div>
+      <div class="pillar"><span class="kicker">Research Line 03</span><h3>How society should respond</h3><p>Governance, law, and institutions for a world of seemingly — or actually — sentient AI: balancing the risks of over- and under-attribution while staying open to revision.</p></div>
+      <div class="pillar"><span class="kicker">Research Line 04</span><h3>The neglected voices</h3><p>We deliberately convene religious, philosophical, and cultural traditions from across the globe — perspectives largely missing from today's debate — to ask what it means to live well alongside minds we did not birth.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNDABLE WORKSTREAMS -->
+<section class="bg-ink">
+  <div class="container">
+    <div data-reveal class="sec-head"><span class="eyebrow on-dark">Fundable Workstreams</span><h2 style="color:var(--ivory)">Four research lines. Four fundable workstreams.</h2><p style="color:var(--silver)">Each research line is scoped as a standalone workstream a funder can support in full or in part — and each is staffed as <em>Talent</em>: NOVO learners and fellows contribute their skills to the work as part of how they give back, turning a degree into a genuine research apprenticeship.</p></div>
+
+    <div class="ws">
+      <div class="ws-no">01</div>
+      <div>
+        <div class="ws-head"><h3>Do Digital Minds Matter?</h3><span class="ws-fund">Fundable Workstream</span></div>
+        <p>Empirical and conceptual research into the potential consciousness, sentience, and moral status of AI systems — and how we could responsibly know. A grant funds a research lead, a fellowship cohort, and open publication of findings.</p>
+        <div class="ws-meta"><span class="chip"><b>Funds:</b> Research lead · fellows · compute</span><span class="chip"><b>Talent:</b> Learner research apprentices</span><span class="chip"><b>Output:</b> Open papers · shared methods</span></div>
+      </div>
+    </div>
+
+    <div class="ws">
+      <div class="ws-no">02</div>
+      <div>
+        <div class="ws-head"><h3>Measuring &amp; Elevating Welfare</h3><span class="ws-fund">Fundable Workstream</span></div>
+        <p>Building and testing methods to measure AI welfare, design interventions that improve well-being, and surface the risks those interventions themselves create. A grant funds tooling, experiments, and a technical fellowship track.</p>
+        <div class="ws-meta"><span class="chip"><b>Funds:</b> Tooling · experiments · fellowships</span><span class="chip"><b>Talent:</b> Technical learner contributors</span><span class="chip"><b>Output:</b> Welfare toolkit · benchmarks</span></div>
+      </div>
+    </div>
+
+    <div class="ws">
+      <div class="ws-no">03</div>
+      <div>
+        <div class="ws-head"><h3>How Society Should Respond</h3><span class="ws-fund">Fundable Workstream</span></div>
+        <p>Governance, law, and institutional design for a world of seemingly — or actually — sentient AI, balancing over- and under-attribution while staying open to revision. A grant funds policy fellows, convenings, and model frameworks.</p>
+        <div class="ws-meta"><span class="chip"><b>Funds:</b> Policy fellows · convenings</span><span class="chip"><b>Talent:</b> Learners in Society &amp; Justice</span><span class="chip"><b>Output:</b> Model policy · governance briefs</span></div>
+      </div>
+    </div>
+
+    <div class="ws">
+      <div class="ws-no">04</div>
+      <div>
+        <div class="ws-head"><h3>The Neglected Voices</h3><span class="ws-fund">Fundable Workstream</span></div>
+        <p>A deliberate program to bring religious, philosophical, and cultural traditions from across the globe into the digital-minds debate — a perspective the field openly lacks. A grant funds a global convening series and a fellowship for underrepresented scholars.</p>
+        <div class="ws-meta"><span class="chip"><b>Funds:</b> Convening series · scholar fellowships</span><span class="chip"><b>Talent:</b> Global learner-conveners</span><span class="chip"><b>Output:</b> Cross-cultural anthology · network</span></div>
+      </div>
+    </div>
+
+    <p style="color:var(--silver);margin-top:2rem;max-width:720px">Together the four workstreams form the applied-work program of the Global AI/Human for Prosperity Research Hub — modular enough to fund one, and coherent enough to fund all.</p>
+  </div>
+</section>
+
+<!-- HUB THEORY OF CHANGE -->
+<section class="bg-alt">
+  <div class="container">
+    <div class="split rev">
+      <div data-reveal class="split-img"><img src="img/ai-real.png" alt="Two students working together with an AI assistant on a laptop in a university library"></div>
+      <div>
+        <span class="eyebrow">Theory of Change</span>
+        <h2>The bottleneck is people. So we grow them.</h2>
+        <p>One of the largest constraints on getting the future of digital minds right is the small number of thoughtful people working on it. NOVO is built to change that — training a globally diverse generation of learners, researchers, and practitioners who take the possible moral status and welfare of AI seriously, and who carry that seriousness into the institutions that will shape it.</p>
+        <p>Every co-mentor becomes a research instrument. Every learner becomes a potential contributor. Every convening widens the field. That is how a university elevates the common good: not by predicting the future, but by preparing the humans — and the human–AI partnerships — who will build it.</p>
+        <a href="convenings.html" class="btn btn-royal" style="margin-top:.6rem">See the Convenings →</a>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="num">5</div><div class="lbl">AI Co-Mentors in development</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">Open research lines</div></div>
+      <div class="stat"><div class="num">5</div><div class="lbl">Global convenings, 2026–28</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RFP / FUNDING ALIGNMENT -->
+<section>
+  <div class="container">
+    <div class="rfp">
+      <span class="eyebrow">A Home for Applied Work on Digital Minds</span>
+      <h2>Built for the field the world urgently needs.</h2>
+      <p>The Global AI/Human for Prosperity Research Hub is designed as a seed institution for applied work on the consciousness, sentience, moral status, and welfare of AI systems — combining field-building, a global curriculum-building convening series, technical and philosophical research, and the underrepresented religious and cultural perspectives the field has long neglected.</p>
+      <p>Our theory of impact is direct: relieve the field's central bottleneck — too few skilled, thoughtful people — by building a university that trains them, a hub that researches with them, and a convening series that connects them across the globe.</p>
+      <div class="meta">
+        <div><small>Aligned With</small><span>Longview Philanthropy — Digital Minds RFP</span></div>
+        <div><small>Track</small><span>Grants for Applied Work</span></div>
+        <div><small>Request</small><span>$2,000,000 · Seed Institution</span></div>
+      </div>
+      <a href="apply.html" class="btn btn-gold" style="margin-top:1.8rem">Partner With Us →</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow on-dark">The Invitation</span>
+    <h2>Help us get the future <em>right.</em></h2>
+    <p>Whether you learn, research, teach, or fund — there is a place for you in the work of human–AI coexistence.</p>
+    <a href="apply.html" class="btn btn-gold">Begin Now →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div><div class="wordmark">NOVO<small>UNIVERSITY</small></div><p>A university restoring the social purpose of higher learning. A program of Free2Learn, a Washington State nonprofit.</p></div>
+      <div class="foot-col"><h5>Learn</h5><a href="model.html">The Model</a><a href="journey.html">The Journey</a><a href="programs.html">Programs</a><a href="ai.html">AI at NOVO</a><a href="convenings.html">Convenings</a><a href="projects.html">Projects</a></div>
+      <div class="foot-col"><h5>Contribute</h5><a href="model.html">Give Time</a><a href="model.html">Give Talent</a><a href="model.html">Give Tithes</a><a href="apply.html">Partner With Us</a></div>
+      <div class="foot-col"><h5>Begin</h5><a href="apply.html">Apply Now</a><a href="apply.html">Visit</a><a href="apply.html">Contact</a></div>
+    </div>
+    <div class="foot-legal"><span>© 2026 NOVO University · A Free2Learn Initiative</span><span>Learning in service of the common good.</span></div>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* ============ NOVO UNIVERSITY — BRAND TOKENS ============ */
+:root{
+  /* palette */
+  --royal-ink:#1c1233;
+  --deep-royal:#2e1b52;   /* PRIMARY */
+  --royal:#4b2e83;
+  --royal-lt:#6b4bb0;
+  --royal-tint:#a98fd6;
+  --forest:#0f6b45;       /* SECONDARY */
+  --forest-lt:#3fae77;
+  --gold:#c9a227;
+  --gold-lt:#e6c65a;
+  --silver:#b9bcc6;
+  --silver-dk:#8a8d99;
+  --ivory:#f4f1ea;
+  --ivory-2:#fbfaf6;
+  --ink-text:#1c1233;
+  --muted:#6b6480;
+
+  /* type */
+  --serif:'EB Garamond', Georgia, 'Times New Roman', serif;
+  --sans:'General Sans','Helvetica Neue', Arial, sans-serif;
+
+  /* scale */
+  --text-sm:.875rem; --text-base:1.0625rem; --text-lg:1.25rem;
+  --text-xl:1.5rem; --text-2xl:2rem; --text-3xl:2.75rem;
+  --text-4xl:3.75rem; --text-hero:5rem;
+
+  /* spacing */
+  --sp-1:.5rem; --sp-2:1rem; --sp-3:1.5rem; --sp-4:2rem;
+  --sp-6:3rem; --sp-8:5rem; --sp-12:8rem;
+
+  --maxw:1200px;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--ink-text);
+  background:var(--ivory);
+  line-height:1.65;
+  font-size:var(--text-base);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-4)}
+.eyebrow{font-family:var(--sans);font-weight:600;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--forest)}
+.eyebrow.on-dark{color:var(--gold-lt)}
+
+/* wordmark */
+.wordmark{font-family:var(--serif);font-weight:600;letter-spacing:.14em;line-height:1}
+.wordmark small{display:block;font-family:var(--sans);font-weight:500;letter-spacing:.42em;font-size:.28em;color:var(--forest);margin-top:.35em;text-indent:.42em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;font-family:var(--sans);font-weight:600;font-size:.95rem;letter-spacing:.02em;padding:.9em 1.6em;border-radius:999px;transition:.25s;cursor:pointer;border:1.5px solid transparent}
+.btn-gold{background:var(--gold);color:var(--royal-ink)}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px)}
+.btn-outline{border-color:currentColor;color:var(--ivory)}
+.btn-outline:hover{background:rgba(255,255,255,.08)}
+.btn-royal{background:var(--deep-royal);color:var(--ivory)}
+.btn-royal:hover{background:var(--royal);transform:translateY(-2px)}
